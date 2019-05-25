@@ -14,7 +14,7 @@ def nyc_pigeon_organizer(data)
             piglist[name][category] = subinfo.to_s
           end
         else
-          piglist[name] = {category => [subinfo]}
+          piglist[name] = {category => [subinfo.to_s]}
         end
       end
     end
