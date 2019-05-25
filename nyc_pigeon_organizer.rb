@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
             if piglist[name][category].include?(subinfo)
               piglist[name][category]
             else
-              piglist[name][category] << subinfo
+              piglist[name][category] << subinfo.to_s
             end
           else
             piglist[name][category] = subinfo
