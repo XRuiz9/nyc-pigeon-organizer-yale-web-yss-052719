@@ -1,4 +1,4 @@
-require 'pry'
+# require 'pry'
 def nyc_pigeon_organizer(data)
   piglist = {}
   data.each do |category, info|
@@ -20,6 +20,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  binding.pry
+  # binding.pry
   piglist
 end
