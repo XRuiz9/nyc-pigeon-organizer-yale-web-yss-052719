@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
               piglist[name][category]
             else
               piglist[name][category] << subinfo.to_s
-              piglist[name][category].uniq!]
+              piglist[name][category].uniq!
             end
           else
             piglist[name][category] = subinfo.to_s
