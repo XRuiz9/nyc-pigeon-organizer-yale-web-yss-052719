@@ -5,8 +5,11 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         if piglist.keys.include?(name)
           if piglist[name][category]
-            piglist[name][category] << subinfo
-            piglist[name][category].uniq!
+            if piglist[name][category].includes?(subinfo)
+              piglist[name][category]
+            else
+              piglist[name][category] << subinfo
+            end
           else
             piglist[name][category] = subinfo
           end
