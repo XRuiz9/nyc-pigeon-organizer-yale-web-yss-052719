@@ -1,3 +1,4 @@
+require 'pry'
 def nyc_pigeon_organizer(data)
   piglist = {}
   data.each do |category, info|
@@ -9,6 +10,7 @@ def nyc_pigeon_organizer(data)
               piglist[name][category]
             else
               piglist[name][category] << subinfo.to_s
+              binding.pry
             end
           else
             piglist[name][category] = subinfo.to_s
