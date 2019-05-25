@@ -19,7 +19,7 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
-  piglist
+  piglist["Theo"][:gender]
 end
 
 nyc_pigeon_organizer({
