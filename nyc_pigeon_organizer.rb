@@ -10,7 +10,6 @@ def nyc_pigeon_organizer(data)
               piglist[name][category]
             else
               piglist[name][category] << subinfo.to_s
-              binding.pry
             end
           else
             piglist[name][category] = subinfo.to_s
@@ -21,5 +20,6 @@ def nyc_pigeon_organizer(data)
       end
     end
   end
+  binding.pry
   piglist
 end
